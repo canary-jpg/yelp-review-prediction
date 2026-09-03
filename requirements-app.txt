@@ -1,0 +1,15 @@
+# Lean set for deployment — mirrors Project 1's pattern (see its README for
+# why: Jupyter and other dev-only tools bloat container builds unnecessarily).
+#
+# NOTE: this currently assumes the TF-IDF baseline is the model being
+# served. If notebook 05 concludes the transformer approach wins, this file
+# needs torch + transformers added (and will be a much larger image as a
+# result — worth weighing against the accuracy gain when deciding).
+
+pandas
+numpy
+scikit-learn
+joblib
+fastapi
+uvicorn[standard]
+pydantic

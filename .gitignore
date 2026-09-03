@@ -1,0 +1,26 @@
+# Raw data — see data/raw/README.md for how to get it
+data/raw/*
+!data/raw/README.md
+
+# Processed data & trained models ARE committed (small enough, and the
+# Docker build needs them) — same approach as Project 1.
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Hugging Face cache (large, re-downloadable)
+.cache/
+*.bin
+
+# Env
+.env
+
+# OS
+.DS_Store

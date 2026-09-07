@@ -1,0 +1,14 @@
+{
+  "TF-IDF + Logistic Regression": {
+    "macro_f1": 0.5727,
+    "weighted_f1": 0.5727
+  },
+  "TF-IDF + Naive Bayes": {
+    "macro_f1": 0.5531,
+    "weighted_f1": 0.5531
+  },
+  "GloVe embeddings + Logistic Regression": {
+    "macro_f1": 0.4756,
+    "weighted_f1": 0.4756
+  }
+}

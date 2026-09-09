@@ -24,3 +24,6 @@ venv/
 
 # OS
 .DS_Store
+
+models/distilbert_checkpoints/*
+models/distilbert_finetuned/

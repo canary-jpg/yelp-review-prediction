@@ -10,5 +10,17 @@
   "GloVe embeddings + Logistic Regression": {
     "macro_f1": 0.4756,
     "weighted_f1": 0.4756
+  },
+  "DistilBERT fine-tuned": {
+    "macro_f1": 0.5702,
+    "weighted_f1": 0.5702
+  },
+  "DistilBERT fine-tuned: 4 Epochs": {
+    "macro_f1": 0.5607,
+    "weighted_f1": 0.5607
+  },
+  "DistilBERT fine-tuned, full training set": {
+    "macro_f1": 0.5957,
+    "weighted_f1": 0.5957
   }
 }

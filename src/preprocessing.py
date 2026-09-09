@@ -25,3 +25,19 @@ def clean_text(text:str) -> str:
     text = re.sub(r"\s+", " ", text).strip() #collapsing whitespace
 
     return text
+
+def light_clean_text(text: str) -> str:
+    """Lighter-touch cleaning for the transformer approach (used in notbook 04)
+    Unlike clean_text() above (used for TF-IDF/embeddings), this keeps punctuation
+    and original casing intact; a transformer's tokenizer and attention mechanism
+    can actually use that signal (e.g. "!" and ALL CAPS both carry sentiment info
+    TF-IDF's bag-of-words throws away anyway). Only fixes the same escape-sequence 
+    artifacts found in EDA; doesn't lowercase or strip punctuation"""
+    if not isinstance(text, str):
+        return ""
+
+    text = re.sub(f"\\[nrt]", " ", text)
+    text = re.sub(r"[\n\r\t]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip() 
+
+    return text

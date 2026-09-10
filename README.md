@@ -1,6 +1,7 @@
 # Yelp Review Rating Prediction
 
 Predicting a review's star rating (1-5) from its text alone, using a subset of the Yelp Business Rating Prediction dataset (~10,000 reviews).
+**Live demo:** [Live demo](https://yelp-review-api.onrender.com/) **API docs:** [API Docs](https://yelp-review-api.onrender.com/docs)
 
 ## Business framing
 
@@ -45,7 +46,7 @@ yelp-review-rating/
 -[X] Word embeddings (GloVe) + classifier
 -[X] Fine-tuned transformer (DistilBERT)
 -[X] FastAPI service
--[] Dockerized + deployed
+-[X] Dockerized + deployed
 -[X] Write-up
 
 ## Results
